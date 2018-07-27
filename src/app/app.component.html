@@ -1,0 +1,13 @@
+<app-navbar style="height: 10vh;"></app-navbar>
+<app-carousel [color]="obtenerRGB()"></app-carousel>
+<div class="container-fluid row py-4">
+  <div class="col-md-3 mt-3">
+    <app-submenu></app-submenu>
+  </div>
+  <div class="col-md-9">
+    <app-itemscontainer></app-itemscontainer>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+

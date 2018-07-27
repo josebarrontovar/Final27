@@ -1,0 +1,16 @@
+<div class="row col-md-12">
+  <div class="midiv col-4" *ngFor="let item of items">
+    <div class="card">
+   
+      <div class="card-body" >
+        <img class="card-img-top" src="{{item.url}}" alt="Card image cap">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <button button (click)="modTexto()" href="#" class="btn btn-primary" [routerLink]="['/pagina1']">See News</button>
+        <h6>{{texto}}</h6>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
